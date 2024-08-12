@@ -44,7 +44,7 @@ export default function Header() {
                     </div>
                     <Link href={`/`} className="btn btn-ghost text-xl hover:bg-transparent">
                         <Image
-                            src={`/logo-png/logo-no-background.png`}
+                            src={`/logo-svg/logo-no-background.svg`}
                             alt="Logo"
                             width={1500}
                             height={1500}

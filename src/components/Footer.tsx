@@ -1,8 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MdOutlineMail } from "react-icons/md"
-import { FaWhatsapp } from "react-icons/fa6"
-import { FaRegAddressCard } from "react-icons/fa6"
 
 export default function Footer() {
     return (
@@ -10,7 +7,7 @@ export default function Footer() {
             <div className="footer mx-auto max-w-7xl p-10 text-base-content">
                 <aside>
                     <Image
-                        src={`/logo-png/motorrent-favicon.png`}
+                        src={`/logo-svg/motorrent-favicon.svg`}
                         alt="Logo MotorRent"
                         width={50}
                         height={50}

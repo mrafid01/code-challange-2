@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import Testimonials from "@/components/Testimonials"
+import Products from "@/components/Products"
 
 export default function Home() {
     return (
@@ -70,76 +71,10 @@ export default function Home() {
             {/* -------------------------------------------------------------------------- */}
 
             {/* -------------------------------- Products -------------------------------- */}
-            {/* TODO: import from components */}
             <section className="mx-auto w-full max-w-7xl px-3 py-10">
                 <h2 className="mb-10 text-center text-4xl font-bold">Our Products</h2>
-                <div className="flex flex-row flex-wrap justify-center gap-10">
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure className="h-[65%] px-10 pt-10">
-                            <Image
-                                src="/vespa.png"
-                                alt="Vespa"
-                                width={1000}
-                                height={1000}
-                                className="h-full w-full object-cover"
-                            />
-                        </figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Vespa
-                                <div className="badge bg-red-600 text-white">HOT</div>
-                            </h2>
-                            <p>IDR 250,000 / Day</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-info">Details</button>
-                            </div>
-                        </div>
-                    </div>
+                <Products forPage="home" />
 
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure className="h-[65%] px-10 pt-10">
-                            <Image
-                                src="/nmax.png"
-                                alt="Nmax"
-                                width={1000}
-                                height={1000}
-                                className="h-full w-full object-cover"
-                            />
-                        </figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Yamaha NMax 155
-                                <div className="badge bg-red-600 text-white">HOT</div>
-                            </h2>
-                            <p>IDR 200,000 / Day</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-info">Details</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="card w-96 bg-base-100 shadow-xl">
-                        <figure className="h-[65%] px-10 pt-10">
-                            <Image
-                                src="/zx25.png"
-                                alt="ZX-25"
-                                width={1000}
-                                height={1000}
-                                className="h-full w-full object-cover"
-                            />
-                        </figure>
-                        <div className="card-body">
-                            <h2 className="card-title">
-                                Kawasaki ZX-25
-                                <div className="badge bg-red-600 text-white">HOT</div>
-                            </h2>
-                            <p>IDR 500,000 / Day</p>
-                            <div className="card-actions justify-end">
-                                <button className="btn btn-info">Details</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <Link
                     href={"/products"}
                     className="btn btn-outline btn-info mx-auto mt-10 flex w-[95%] max-w-[1230px] px-0 text-center"
@@ -150,7 +85,6 @@ export default function Home() {
             {/* -------------------------------------------------------------------------- */}
 
             {/* ------------------------------ Testimonials ------------------------------ */}
-            {/* TODO: fix this responsive */}
             <section className="mx-auto w-full max-w-7xl">
                 <h2 className="mt-5 text-center text-4xl font-bold">Testimonials</h2>
                 <h3 className="mt-2 text-center text-2xl font-bold italic">What Our Clients Say</h3>

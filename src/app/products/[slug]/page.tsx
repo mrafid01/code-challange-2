@@ -1,6 +1,7 @@
 import { createClient } from "contentful"
 import Image from "next/image"
 import Link from "next/link"
+import { TypeProductMotorRentSkeleton, ContentfulImage } from "@/contentful/types"
 
 export default async function Page({ params }: { params: { slug: string } }) {
     try {
@@ -9,12 +10,13 @@ export default async function Page({ params }: { params: { slug: string } }) {
             environment: process.env.CONTENTFUL_ENVIRONMENT,
             accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
         })
-        const response = await client.getEntries({
+        const response = await client.getEntries<TypeProductMotorRentSkeleton>({
             content_type: process.env.CONTENTFUL_CONTENT_TYPE!,
             "fields.slug": params.slug,
         })
         const results = response.items[0].fields
-        const { title, brand, pricePerDay, image, cc, transmission, year, gasTank, type } = results
+        const { title, brand, pricePerDay, cc, transmission, year, gasTank, type } = results
+        const image = results.image as ContentfulImage
         return (
             <main className="mx-auto my-10 w-full max-w-7xl">
                 <h2 className="my-10 px-5 text-center text-4xl font-bold">DETAIL PRODUCTS</h2>
