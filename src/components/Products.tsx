@@ -1,0 +1,63 @@
+import { createClient } from "contentful"
+import Image from "next/image"
+import Link from "next/link"
+
+export default async function Products() {
+    try {
+        const client = createClient({
+            space: process.env.CONTENTFUL_SPACE_ID!,
+            environment: process.env.CONTENTFUL_ENVIRONMENT,
+            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
+        })
+        const response = await client.getEntries({
+            content_type: process.env.CONTENTFUL_CONTENT_TYPE!,
+        })
+        const results = response.items
+        return (
+            <div className="flex flex-row flex-wrap justify-center gap-10">
+                {results.map((product, index) => {
+                    return (
+                        <div key={index} className="card w-96 bg-base-100 shadow-xl">
+                            <figure className="h-[65%] px-10 pt-10">
+                                <Image
+                                    src={`https:${product?.fields.image.fields.file.url}`}
+                                    alt={product?.fields.title}
+                                    width={1000}
+                                    height={1000}
+                                    className="h-full w-full object-cover"
+                                />
+                            </figure>
+                            <div className="card-body">
+                                <h2 className="card-title">
+                                    {product?.fields.title}
+                                    {product?.fields.type === "Hot" ? (
+                                        <div className="badge bg-red-600 text-white">HOT</div>
+                                    ) : null}
+                                </h2>
+                                <p>
+                                    IDR {product?.fields.pricePerDay.toLocaleString("id-ID")} / Day
+                                </p>
+                                <div className="card-actions justify-end">
+                                    <Link
+                                        href={`/products/${product?.fields.slug}`}
+                                        className="btn btn-info"
+                                    >
+                                        Details
+                                    </Link>
+                                    <Link
+                                        href={`https://wa.me/6281234567899?text=Halo,%20Saya%20tertarik%20menyewa%20motor%20${product?.fields.title}%20ini.`}
+                                        className="btn btn-success"
+                                    >
+                                        Book
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
+        )
+    } catch (error) {
+        console.log(error)
+    }
+}
