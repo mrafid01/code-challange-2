@@ -36,11 +36,11 @@ export default function Page() {
                 <div className="my-1 flex flex-col items-center justify-center gap-5">
                     <h2 className="text-4xl font-bold">Our Culture</h2>
                     <p className="text-balance p-4 text-center text-xl text-gray-500 lg:p-0">
-                        Working at MotorRent means being part of a family that values each
+                        {`Working at MotorRent means being part of a family that values each
                         individual's contributions and strives to create an environment where
                         everyone can thrive. Our culture is the foundation of our success and the
                         key to our continued growth. We are committed to fostering a work
-                        environment that encourages innovation, integrity, and inclusivity.
+                        environment that encourages innovation, integrity, and inclusivity.`}
                     </p>
                 </div>
                 <div className="my-10 flex flex-col gap-10 p-4 lg:p-0">
