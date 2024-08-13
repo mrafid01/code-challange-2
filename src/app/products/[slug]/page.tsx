@@ -3,6 +3,27 @@ import Image from "next/image"
 import Link from "next/link"
 import { TypeProductMotorRentSkeleton, ContentfulImage } from "@/contentful/types"
 
+export async function generateStaticParams() {
+    try {
+        const client = createClient({
+            space: process.env.CONTENTFUL_SPACE_ID!,
+            accessToken: process.env.CONTENTFUL_ACCESS_KEY!,
+        })
+        const response = await client.getEntries<TypeProductMotorRentSkeleton>({
+            content_type: process.env.CONTENTFUL_CONTENT_TYPE!,
+        })
+
+        return (
+            response.items.map((item) => {
+                slug: item.fields.slug
+            }) || []
+        )
+    } catch (error) {
+        console.error(error)
+        return []
+    }
+}
+
 export default async function Page({ params }: { params: { slug: string } }) {
     try {
         const client = createClient({
