@@ -7,7 +7,8 @@ export async function generateStaticParams() {
     try {
         const client = createClient({
             space: process.env.CONTENTFUL_SPACE_ID!,
-            accessToken: process.env.CONTENTFUL_ACCESS_KEY!,
+            environment: process.env.CONTENTFUL_ENVIRONMENT,
+            accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
         })
         const response = await client.getEntries<TypeProductMotorRentSkeleton>({
             content_type: process.env.CONTENTFUL_CONTENT_TYPE!,
