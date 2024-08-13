@@ -31,7 +31,7 @@ export default async function Products(props: { forPage: string }) {
                                     alt={product?.fields.title}
                                     width={304}
                                     height={255}
-                                    className="h-full w-full object-fill"
+                                    className="h-full w-full object-cover"
                                 />
                             </figure>
                             <div className="card-body">
@@ -74,7 +74,7 @@ export default async function Products(props: { forPage: string }) {
                                           alt={product?.fields.title}
                                           width={304}
                                           height={300.6}
-                                          className="h-full w-full object-fill"
+                                          className="h-full w-full object-cover"
                                       />
                                   </figure>
                                   <div className="card-body">
