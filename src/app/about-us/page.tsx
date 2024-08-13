@@ -106,57 +106,66 @@ export default function Page() {
             {/* -------------------------------------------------------------------------- */}
 
             {/* ---------------------------- Milestone Section --------------------------- */}
-            <section className="flex min-h-screen items-center justify-center px-3 py-5 xl:p-0">
-                <div className="flex w-full items-center justify-center">
-                    <ul className="steps steps-vertical w-fit">
-                        <li className="step step-primary">
-                            <h3 className="px-3 py-5 text-start text-xl font-bold">
-                                Founding
-                                <br />
-                                <span className="text-balance font-normal">
-                                    MotorRent was established with a vision to provide seamless and
-                                    accessible motorcycle rental solutions. Starting with a small
-                                    fleet of motorcycles, we set out to revolutionize the industry
-                                    with our customer-centric approach.
-                                </span>
-                            </h3>
-                        </li>
-                        <li className="step step-primary">
-                            <h3 className="px-3 py-5 text-start text-xl font-bold">
-                                Early Growth
-                                <br />
-                                <span className="text-balance font-normal">
-                                    During our early growth phase, we quickly expanded our fleet and
-                                    reached 1,000 customers within the first year, demonstrating our
-                                    commitment to providing reliable and diverse transportation
-                                    options.
-                                </span>
-                            </h3>
-                        </li>
-                        <li className="step step-primary">
-                            <h3 className="px-3 py-5 text-start text-xl font-bold">
-                                Technological Advancements
-                                <br />
-                                <span className="text-balance font-normal">
-                                    We embraced technological advancements by launching an online
-                                    booking system and a mobile app, significantly enhancing the
-                                    accessibility and convenience of our services for customers.
-                                </span>
-                            </h3>
-                        </li>
-                        <li className="step step-primary">
-                            <h3 className="px-3 py-5 text-start text-xl font-bold">
-                                Present Day
-                                <br />
-                                <span className="text-balance font-normal">
-                                    Today, we proudly serve over 50,000 customers and have expanded
-                                    to multiple new locations. Our continuous innovation and
-                                    dedication to exceptional service ensure that MotorRent remains
-                                    a trusted name in transportation solutions.
-                                </span>
-                            </h3>
-                        </li>
-                    </ul>
+            <section className="my-10">
+                <h2 className="my-3 text-center text-4xl font-bold">Our Journey</h2>
+                <p className="my-3 text-center text-xl text-gray-500">
+                    Explore the key milestones that have shaped MotorRent's success and commitment
+                    to providing effortless mobility for everyone.
+                </p>
+                <div className="flex items-center justify-center px-3 py-5 xl:p-0">
+                    <div className="flex w-full items-center justify-center">
+                        <ul className="steps steps-vertical w-fit">
+                            <li className="step step-primary">
+                                <h3 className="px-3 py-5 text-start text-xl font-bold">
+                                    Founding
+                                    <br />
+                                    <span className="text-balance font-normal">
+                                        MotorRent was established with a vision to provide seamless
+                                        and accessible motorcycle rental solutions. Starting with a
+                                        small fleet of motorcycles, we set out to revolutionize the
+                                        industry with our customer-centric approach.
+                                    </span>
+                                </h3>
+                            </li>
+                            <li className="step step-primary">
+                                <h3 className="px-3 py-5 text-start text-xl font-bold">
+                                    Early Growth
+                                    <br />
+                                    <span className="text-balance font-normal">
+                                        During our early growth phase, we quickly expanded our fleet
+                                        and reached 1,000 customers within the first year,
+                                        demonstrating our commitment to providing reliable and
+                                        diverse transportation options.
+                                    </span>
+                                </h3>
+                            </li>
+                            <li className="step step-primary">
+                                <h3 className="px-3 py-5 text-start text-xl font-bold">
+                                    Technological Advancements
+                                    <br />
+                                    <span className="text-balance font-normal">
+                                        We embraced technological advancements by launching an
+                                        online booking system and a mobile app, significantly
+                                        enhancing the accessibility and convenience of our services
+                                        for customers.
+                                    </span>
+                                </h3>
+                            </li>
+                            <li className="step step-primary">
+                                <h3 className="px-3 py-5 text-start text-xl font-bold">
+                                    Present Day
+                                    <br />
+                                    <span className="text-balance font-normal">
+                                        Today, we proudly serve over 50,000 customers and have
+                                        expanded to multiple new locations. Our continuous
+                                        innovation and dedication to exceptional service ensure that
+                                        MotorRent remains a trusted name in transportation
+                                        solutions.
+                                    </span>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             {/* -------------------------------------------------------------------------- */}

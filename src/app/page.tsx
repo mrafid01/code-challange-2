@@ -6,6 +6,7 @@ import Products from "@/components/Products"
 export default function Home() {
     return (
         <main>
+            {/* TODO: tanya kak nadhif UI slicing dan apa yang harus ditambahkan/diubah isi contentnya */}
             {/* ----------------------------- Hero Selection ----------------------------- */}
             <section
                 className="hero min-h-screen"
@@ -24,7 +25,9 @@ export default function Home() {
                             getaway, we have the right bike for you. Easy rentals, unbeatable
                             prices, and excellent customer service.
                         </p>
-                        <button className="btn btn-info">Book Now!</button>
+                        <Link href={`/products`} className="btn btn-info">
+                            Book Now!
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -49,7 +52,7 @@ export default function Home() {
                         enjoy limitless journeys
                     </p>
                     <Link href={`/about-us`} className="btn btn-info">
-                        Learn More
+                        Discover Our Story
                     </Link>
                 </div>
                 <Image
@@ -66,7 +69,6 @@ export default function Home() {
             <section className="mx-auto w-full max-w-7xl px-3 py-10">
                 <h2 className="mb-10 text-center text-4xl font-bold">Our Products</h2>
                 <Products forPage="home" />
-
                 <Link
                     href={"/products"}
                     className="btn btn-outline btn-info mx-auto mt-10 flex w-[95%] max-w-[1230px] px-0 text-center"
