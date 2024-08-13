@@ -109,8 +109,8 @@ export default function Page() {
             <section className="my-10">
                 <h2 className="my-3 text-center text-4xl font-bold">Our Journey</h2>
                 <p className="my-3 text-center text-xl text-gray-500">
-                    Explore the key milestones that have shaped MotorRent's success and commitment
-                    to providing effortless mobility for everyone.
+                    {`Explore the key milestones that have shaped MotorRent's success and commitment
+                    to providing effortless mobility for everyone.`}
                 </p>
                 <div className="flex items-center justify-center px-3 py-5 xl:p-0">
                     <div className="flex w-full items-center justify-center">
@@ -174,7 +174,7 @@ export default function Page() {
             <section>
                 <h2 className="my-3 text-center text-4xl font-bold">Our Team</h2>
                 <p className="my-3 text-center text-xl text-gray-500">
-                    Meet the team behind MotorRent who work tirelessly to provide you with the best
+                    Meet the team behind MotorRent who work tirelessly to provide you with the best.
                 </p>
                 <HeadTeams />
             </section>
