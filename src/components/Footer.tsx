@@ -20,7 +20,7 @@ export default function Footer() {
                     </p>
                 </aside>
                 <nav>
-                    <h2 className="footer-title">Quick Links</h2>
+                    <h2 className="footer-title opacity-100">Quick Links</h2>
                     <Link href={`/`} className="link-hover link">
                         Home
                     </Link>
@@ -35,7 +35,7 @@ export default function Footer() {
                     </Link>
                 </nav>
                 <nav>
-                    <h2 className="footer-title">Contact Us</h2>
+                    <h2 className="footer-title opacity-100">Contact Us</h2>
                     <Link href={`mailto:support@motorrent.com`} className="link-hover link">
                         Email: support@motorrent.com
                     </Link>
@@ -51,7 +51,7 @@ export default function Footer() {
                     </Link>
                 </nav>
                 <nav>
-                    <h2 className="footer-title">Follow Us</h2>
+                    <h2 className="footer-title opacity-100">Follow Us</h2>
                     <div className="grid grid-flow-col gap-4">
                         <Link href={`https://x.com/`} aria-label="Twitter">
                             <svg

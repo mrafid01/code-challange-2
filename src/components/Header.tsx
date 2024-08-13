@@ -79,7 +79,7 @@ export default function Header() {
                             "https://wa.me/6281234567899?text=Halo%2C%20MotorRent.%20Saya%20butuh%20bantuan."
                         }
                         target="_blank"
-                        className="btn btn-outline btn-error"
+                        className="btn btn-error"
                     >
                         <FaWhatsapp className="h-full" />
                         Layanan Darurat
