@@ -29,8 +29,8 @@ export default async function Products(props: { forPage: string }) {
                                 <Image
                                     src={`https:${image.fields.file.url}`}
                                     alt={product?.fields.title}
-                                    width={1000}
-                                    height={1000}
+                                    width={500}
+                                    height={500}
                                     className="h-full w-full object-cover"
                                 />
                             </figure>
@@ -72,8 +72,8 @@ export default async function Products(props: { forPage: string }) {
                                       <Image
                                           src={`https:${image.fields.file.url}`}
                                           alt={product?.fields.title}
-                                          width={1000}
-                                          height={1000}
+                                          width={500}
+                                          height={500}
                                           className="h-full w-full object-cover"
                                       />
                                   </figure>

@@ -10,8 +10,7 @@ export default function Home() {
             <section
                 className="hero min-h-screen"
                 style={{
-                    // backgroundImage: 'url(https://www.motosikletsitesi.com/wp-content/uploads/2021/11/50cc-motor-modelleri.jpeg)',
-                    backgroundImage: "url(hero.jpeg)",
+                    backgroundImage: "url(hero.webp)",
                 }}
             >
                 <div className="hero-overlay bg-opacity-60"></div>
@@ -27,9 +26,6 @@ export default function Home() {
                         </p>
                         <button className="btn btn-info">Book Now!</button>
                     </div>
-                    {/* <div className="max-w-md rounded-lg shadow-2xl">
-                        <Image src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp" alt="Hero Image" width={100} height={100} className="w-full h-full object-cover" />
-                    </div> */}
                 </div>
             </section>
             {/* -------------------------------------------------------------------------- */}
@@ -52,21 +48,17 @@ export default function Home() {
                         experience with MotorRent. Discover the freedom of riding with MotorRent and
                         enjoy limitless journeys
                     </p>
-                    <Link href={`/about`} className="btn btn-info">
+                    <Link href={`/about-us`} className="btn btn-info">
                         Learn More
                     </Link>
                 </div>
                 <Image
-                    src="/vector-company.png"
+                    src="/vector/vector-company.png"
                     alt="Vector Company"
                     width={500}
                     height={500}
                     className="hidden rounded-lg drop-shadow-xl xl:block"
                 />
-                {/* <img src="/vector-company.png" alt="Vector Company" className="rounded-lg shadow-2xl hidden lg:block" /> */}
-                {/* <figure className="rounded-lg shadow-2xl hidden lg:block w-fit h-fit">
-                    <Image src="/vector-company.png" alt="Vector Company" width={1000} height={1000} className="w-[500px] h-[500px]" />
-                </figure> */}
             </section>
             {/* -------------------------------------------------------------------------- */}
 

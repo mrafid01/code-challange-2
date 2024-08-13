@@ -9,7 +9,7 @@ export default function Page() {
                 <div className="hero-content flex-col lg:flex-row">
                     <figure className="w-full lg:w-[620px]">
                         <Image
-                            src="/about-vector.png"
+                            src="/vector/about-vector.png"
                             alt="vector-about-us"
                             width={1000}
                             height={1000}

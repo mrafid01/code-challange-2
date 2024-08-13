@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Testimonials() {
     const testimonials = [
@@ -38,7 +39,12 @@ export default function Testimonials() {
                                 <div className="flex flex-row items-center gap-5">
                                     <figure className="avatar">
                                         <div className="w-24 rounded-full">
-                                            <img src={testimonial.avatar} />
+                                            <Image
+                                                src={testimonial.avatar}
+                                                alt="Customer Picture"
+                                                width={128}
+                                                height={128}
+                                            />
                                         </div>
                                     </figure>
                                     <h2 className="text-xl">{testimonial.name}</h2>

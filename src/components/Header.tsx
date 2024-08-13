@@ -8,7 +8,12 @@ export default function Header() {
             <nav className="navbar mx-auto max-w-7xl">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div
+                            tabIndex={0}
+                            role="button"
+                            className="btn btn-ghost lg:hidden"
+                            aria-labelledby="dropdown-button"
+                        >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 className="h-5 w-5"
@@ -32,7 +37,7 @@ export default function Header() {
                                 <Link href={"/"}>Home</Link>
                             </li>
                             <li>
-                                <Link href={"/about"}>About Us</Link>
+                                <Link href={"/about-us"}>About Us</Link>
                             </li>
                             <li>
                                 <Link href={"/products"}>Products</Link>
@@ -58,7 +63,7 @@ export default function Header() {
                             <Link href={"/"}>Home</Link>
                         </li>
                         <li>
-                            <Link href={"/about"}>About Us</Link>
+                            <Link href={"/about-us"}>About Us</Link>
                         </li>
                         <li>
                             <Link href={"/products"}>Products</Link>
