@@ -6,7 +6,6 @@ import Products from "@/components/Products"
 export default function Home() {
     return (
         <main>
-            {/* TODO: tanya kak nadhif UI slicing dan apa yang harus ditambahkan/diubah isi contentnya */}
             {/* ----------------------------- Hero Selection ----------------------------- */}
             <section
                 className="hero min-h-screen"
