@@ -82,7 +82,7 @@ export default function Header() {
                         className="btn btn-error"
                     >
                         <FaWhatsapp className="h-full" />
-                        Layanan Darurat
+                        Emergency Services
                     </Link>
                 </div>
             </nav>
